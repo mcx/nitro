@@ -40,7 +40,7 @@ x-tagGroups:
 paths:
   /healthz:
     get:
-      operationId: HeathCheck
+      operationId: heathCheck
       tags:
         - Health Check
       summary: Check the status of Nitro Server.
@@ -152,7 +152,7 @@ paths:
       operationId: createChatCompletion
       tags:
         - Chat Completion
-      summary: Create an chat with the model.
+      summary: Create a chat with the model.
       requestBody:
         content:
           application/json:
@@ -440,6 +440,10 @@ components:
               default: true
               nullable: true
               description: Determines if output generation is in a streaming manner.
+            cache_prompt:
+              type: boolean
+              default: true
+              description: Optimize performance in repeated or similar requests.
             temp:
               type: number
               default: 0.7
@@ -551,11 +555,11 @@ components:
           default: true
           description: >-
             Enables continuous output generation, allowing for streaming of
-            model responses.
+            model responses
         model:
           type: string
           example: gpt-3.5-turbo
-          description: Specifies the model being used for inference or processing tasks.
+          description: Specifies the model being used for inference or processing tasks
         max_tokens:
           type: number
           default: 2048
@@ -568,13 +572,13 @@ components:
             - hello
           description: >-
             Defines specific tokens or phrases at which the model will stop
-            generating further output.
+            generating further output
         frequency_penalty:
           type: number
           default: 0
           description: >-
             Adjusts the likelihood of the model repeating words or phrases in
-            its output.
+            its output
         presence_penalty:
           type: number
           default: 0
@@ -587,6 +591,16 @@ components:
           min: 0
           max: 1
           description: Controls the randomness of the model's output
+        top_p:
+          type: number
+          default: 0.95
+          min: 0
+          max: 1
+          description: Set probability threshold for more relevant outputs
+        cache_prompt:
+          type: boolean
+          default: true
+          description: Optimize performance in repeated or similar requests.
     ChatCompletionResponse:
       type: object
       description: Description of the response structure
