@@ -222,6 +222,11 @@ components:
           description: >-
             The number of parallel operations. Only set when enable continuous
             batching.
+        cpu_threads:
+          type: integer
+          example: 4
+          nullable: true
+          description: The number of threads for CPU-based inference.
         pre_prompt:
           type: string
           default: >-
