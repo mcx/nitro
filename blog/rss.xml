@@ -4,7 +4,7 @@
         <title>Nitro Blog</title>
         <link>https://nitro.jan.ai/blog</link>
         <description>Nitro Blog</description>
-        <lastBuildDate>Wed, 29 Nov 2023 10:26:50 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 01 Dec 2023 06:03:42 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -12,7 +12,7 @@
             <title><![CDATA[Hello World]]></title>
             <link>https://nitro.jan.ai/blog/hello-world</link>
             <guid>https://nitro.jan.ai/blog/hello-world</guid>
-            <pubDate>Wed, 29 Nov 2023 10:26:50 GMT</pubDate>
+            <pubDate>Fri, 01 Dec 2023 06:03:42 GMT</pubDate>
             <description><![CDATA[This is my first post on Docusaurus.]]></description>
             <content:encoded><![CDATA[<p>Hello World!</p>]]></content:encoded>
             <category>hello</category>
@@ -22,7 +22,7 @@
             <title><![CDATA[test]]></title>
             <link>https://nitro.jan.ai/blog/test</link>
             <guid>https://nitro.jan.ai/blog/test</guid>
-            <pubDate>Wed, 29 Nov 2023 10:26:50 GMT</pubDate>
+            <pubDate>Fri, 01 Dec 2023 06:03:42 GMT</pubDate>
         </item>
     </channel>
 </rss>
