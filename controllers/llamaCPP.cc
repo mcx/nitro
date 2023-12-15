@@ -466,7 +466,7 @@ bool llamaCPP::loadModelImpl(const Json::Value &jsonBody) {
   }
 #ifdef GGML_USE_CUBLAS
   LOG_INFO << "Setting up GGML CUBLAS PARAMS";
-  params.mul_mat_q = false;
+  params.mul_mat_q = jsonBody.get("mul_mat_q",false).asBool();
 #endif // GGML_USE_CUBLAS
   if (params.model_alias == "unknown") {
     params.model_alias = params.model;
